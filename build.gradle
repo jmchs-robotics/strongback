@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'WPI'
+        url = 'http://first.wpi.edu/FRC/roborio/maven/release'
+    }
+}
+
+dependencies {
+    compile 'edu.wpi.first.wpilib.networktables.java:NetworkTables:+:desktop'
+    compile 'edu.wpi.first.wpilib.networktables.java:NetworkTables:+:arm'
+
+    compile 'edu.wpi.first.wpilibj:wpilibJavaFinal:+'
+
+    compile 'junit:junit:4.11'
+    compile 'io.dropwizard.metrics:metrics-core:3.1.0'
+
+    testCompile 'org.easytesting:fest-assert:1.4'
+}
