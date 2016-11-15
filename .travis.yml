@@ -1,6 +1,3 @@
-sudo: false
 language: java
-install: ant deps
-script: ant test
 jdk:
   - oraclejdk8
